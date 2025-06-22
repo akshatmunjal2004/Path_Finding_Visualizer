@@ -1,0 +1,136 @@
+/* General Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #27374D;
+    color: #ffffff;
+}
+
+/* Container Styling */
+.visualizer-container {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #27374D;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title Styling */
+.title {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+    color: #ffffff;
+    /* Full white */
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Control Panel */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+button.MuiButton-root {
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #526D82 !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 6px rgba(157, 178, 191, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 8px 18px;
+    letter-spacing: 0.5px;
+}
+
+button.MuiButton-root:hover {
+    background-color: #9DB2BF !important;
+    box-shadow: 0 0 10px rgba(221, 230, 237, 0.5);
+}
+
+/* Grid Container */
+.grid-wrapper {
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #526D82;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #1f2c3d;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Grid Table */
+.grid {
+    border-spacing: 0;
+}
+
+/* Node Cell */
+.node {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #3d5266;
+    transition: background-color 0.25s ease, box-shadow 0.3s ease;
+}
+
+/* Start & Finish Nodes */
+.node-start {
+    background-color: #9DB2BF !important;
+    box-shadow: inset 0 0 6px #9DB2BF;
+    border-radius: 3px;
+}
+
+.node-finish {
+    background-color: #DDE6ED !important;
+    box-shadow: inset 0 0 6px #DDE6ED;
+    border-radius: 3px;
+}
+
+/* Walls */
+.node-wall {
+    background-color: #131920;
+    box-shadow: inset 0 0 3px #000;
+}
+
+/* Visited Node */
+.node-visited {
+    background-color: #526D82;
+    animation: visitedFade 0.3s ease-out;
+}
+
+/* Final Path Node — Subtle one-time glow */
+.node-shortest-path {
+    background-color: #DDE6ED;
+    animation: softGlow 0.6s ease-in-out;
+}
+
+/* Visited animation */
+@keyframes visitedFade {
+    0% {
+        background-color: #27374D;
+    }
+
+    100% {
+        background-color: #526D82;
+    }
+}
+
+/* Subtle single-time glow for shortest path */
+@keyframes softGlow {
+    0% {
+        box-shadow: 0 0 0px #dde6ed;
+    }
+
+    30% {
+        box-shadow: 0 0 10px #dde6ed;
+    }
+
+    100% {
+        box-shadow: 0 0 0px transparent;
+    }
+}
