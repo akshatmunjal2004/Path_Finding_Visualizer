@@ -1,10 +1,10 @@
-# 🚀 Pathfinding Visualizer
+# Pathfinding Visualizer
 
 A visually interactive and elegant **ReactJS-based Pathfinding Visualizer** that demonstrates how popular pathfinding algorithms explore and find paths in a grid. You can draw walls, visualize each algorithm's behavior, and see the shortest path animation with a futuristic UI.
 
 ---
 
-## 📌 Features
+## Features
 
 - Interactive grid-based visualizer
 - Drag to draw/remove walls with mouse
@@ -15,35 +15,36 @@ A visually interactive and elegant **ReactJS-based Pathfinding Visualizer** that
 
 ---
 
-## 🧠 Algorithms Implemented
+## Algorithms Implemented
 
-- 📍 **Dijkstra's Algorithm** – weighted, guaranteed shortest path
-- 📍 **A\*** (A-Star) – weighted, heuristic based
-- 📍 **Breadth-First Search (BFS)** – unweighted
-- 📍 **Depth-First Search (DFS)** – unweighted
-
----
-
-## 🛠 Tech Stack
-
-- ⚛️ ReactJS
-- 💄 Material UI (MUI)
-- 🎨 CSS Animations
-- 📦 Create React App
+-  **Dijkstra's Algorithm** – weighted, guaranteed shortest path
+-  **A\*** (A-Star) – weighted, heuristic based
+-  **Breadth-First Search (BFS)** – unweighted
+-  **Depth-First Search (DFS)** – unweighted
 
 ---
 
-## 🚀 Getting Started
+## Tech Stack
+
+-  ReactJS
+-  Material UI (MUI)
+-  CSS Animations
+-  Create React App
+
+---
+
+## Getting Started
 
 Follow these steps to run the project locally:
 
-# 1. Clone the repository
+## 1. Clone the repository
 git clone https://github.com/your-username/pathfinding-visualizer.git
+<br>
 cd pathfinding-visualizer
 
-# 2. Install dependencies
+## 2. Install dependencies
 npm install
 
-# 3. Start the development server
+## 3. Start the development server
 npm start
 
